@@ -1,21 +1,9 @@
 # LED74HC595
-stm32 C-lib "4-Bit LED Digital Tube Module"
-lib uses SPI&TIMER3
+stm32 lib  for "4-Bit LED Digital Tube Module"
 
-7segments LED is:
-	                1  A  F 2  3  B
-	 _______________|__|__|__|__|__|_____________
-	|         |         |    |         |         |
-	|    A    |    A    |    |    A    |    A    |
-	| F     B | F     B | dp | F     B | F     B |
-	|    G    |    G    |    |    G    |    G    |
-	| E     C | E     C | dp | E     C | E     C |
-	|    D    |    D    |    |    D    |    D    |
-	|_________|_________|____|_________|_________|
-	                |  |  |  |  |  |
-	                E  D dp  C  G  4
-	
-  The module has two 74HC595 chips, pin mapping:
+
+lib uses SPI&TIMER3
+The module has two 74HC595 chips, pin mapping:
 	     _______
 	Q1  |1 *  16|  Vcc                  PINS 1-7, 15   Q0 - Q7   Output Pins
 	Q2  |2    15|  Q0                   PIN 8      GND       Ground, Vss
